@@ -1,0 +1,47 @@
+# =============================================
+#   ClaudeChat - Plugin konfiguracja
+# =============================================
+
+# Klucz API Anthropic (https://console.anthropic.com/)
+api-key: "WSTAW-TUTAJ-SWOJ-KLUCZ-API"
+
+# Model Claude do użycia
+# Opcje:
+#   claude-haiku-4-5-20251001  - najszybszy i najtańszy (zalecany)
+#   claude-sonnet-4-6          - mądrzejszy, ale wolniejszy i droższy
+#   claude-opus-4-7            - najpotężniejszy, najdroższy
+model: "claude-haiku-4-5-20251001"
+
+# Cooldown między pytaniami (w sekundach)
+cooldown-seconds: 30
+
+# Maksymalna liczba znaków w pytaniu gracza
+max-question-length: 500
+
+# Prefix wyświetlany przed odpowiedzią Claude'a
+# Obsługuje kody kolorów Minecraft (&a, &b, &c, ...)
+chat-prefix: "&b[Claude] &f"
+
+# =============================================
+#   Informacje o serwerze (używane w system prompt)
+# =============================================
+server-name: "Mój Serwer Minecraft"
+server-description: "Serwer survivalowy na Paper 1.21.1"
+
+# Dodatkowe instrukcje dla Claude (opcjonalne, może być puste)
+# Przykład: "Odpowiadaj wyłącznie po polsku. Nie używaj wulgaryzmów."
+system-prompt-extra: ""
+
+# =============================================
+#   Wiadomości (obsługują kody kolorów &)
+# =============================================
+messages:
+  waiting: "&7Pytam Claude'a, poczekaj chwilę..."
+  no-permission: "&cNie masz uprawnień do używania tej komendy."
+  cooldown: "&cMusisz poczekać jeszcze &e{time}s &czanim zadasz kolejne pytanie."
+  usage: "&eUżycie: &f/claude <pytanie>"
+  question-too-long: "&cPytanie jest zbyt długie! Maksymalnie &e{max} &cznaków."
+  player-only: "&cTa komenda jest tylko dla graczy."
+  api-key-missing: "&c[ClaudeChat] Brak klucza API! Administrator musi ustawić go w config.yml."
+  api-error: "&cBłąd komunikacji z Claude (kod {code}). Sprawdź logi serwera."
+  connection-error: "&cNie udało się połączyć z Claude. Spróbuj ponownie za chwilę."

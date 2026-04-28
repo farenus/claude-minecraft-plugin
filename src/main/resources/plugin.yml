@@ -1,0 +1,20 @@
+name: ClaudeChat
+version: 1.0.0
+main: net.mnetlab.claudechat.ClaudeChatPlugin
+api-version: '1.21'
+description: Porozmawiaj z Claude AI bezpośrednio z gry Minecraft
+authors: [ClaudeChat]
+
+commands:
+  claude:
+    description: Zadaj pytanie Claude AI
+    usage: /claude <pytanie>
+    permission: claudechat.use
+
+permissions:
+  claudechat.use:
+    description: Pozwala używać komendy /claude
+    default: op
+  claudechat.bypass-cooldown:
+    description: Pomija cooldown między pytaniami
+    default: op
