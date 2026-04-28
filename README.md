@@ -110,7 +110,3 @@ Plugin używa API Anthropic, które jest płatne. Szacunkowy koszt przy modelu H
 | 1000 pytań | ~$0.05 |
 
 Szczegółowe cenniki: [anthropic.com/pricing](https://www.anthropic.com/pricing)
-
-## Licencja
-
-[MIT](LICENSE)
