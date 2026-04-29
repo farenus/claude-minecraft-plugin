@@ -1,6 +1,6 @@
 # ClaudeChat — Plugin Minecraft
 
-Plugin do Paper 1.21.1 umożliwiający graczom rozmowę z Claude AI bezpośrednio z czatu gry.
+Plugin do serwera Minecraft z Paper 1.21.1 umożliwiający graczom rozmowę z Claude AI bezpośrednio z czatu gry.
 
 ## Funkcje
 
